@@ -1,0 +1,475 @@
+/* @font-face{
+    font-family: diodram;
+    src: url(../font/font/DiodrumArabic-Medium.ttf);
+} */
+/* *{
+    font-family: diodram;
+    
+} */
+body, html, h1, h2, h3, h4, h5, h6, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+.row{
+    width: 100%;
+}
+.img-res{
+    width: 100%;
+
+}
+.fl-r{
+    float: right;
+}
+.fl-l{
+    float: left;
+}
+.padding-l{
+    padding-left: 10px;
+}
+/* contant */
+.nav{
+    font-size: 0;
+    background-color: rgb(221, 217, 217);
+    z-index: 999;
+    top: 0;
+    position: sticky;
+}
+.container{
+    /* background-color: rgb(221, 217, 217); */
+    width: 70%;
+    font-size: 13px;
+    /* height: 30px; */
+    /* line-height: 30px; */
+}
+.img{
+    width: 15px;
+    padding-right: 10px;
+    height: 30px;
+    transition-property: all;
+    transition-duration: 1s;
+}
+.paragraph{
+    padding-right: 5px;
+    margin-left: 5px;
+}
+.one:hover{
+    background-color: rgb(33, 139, 75);
+} 
+.two:hover{
+    background-color: rgb(20, 88, 170);
+} 
+.tree:hover{
+    background: linear-gradient(to top left, rgb(118, 22, 139),rgb(243, 156, 156));
+} 
+.four:hover{
+    background-color: rgb(116, 218, 255);
+}
+/* end contanet */
+/* start nav */
+.active{
+    border-bottom: 2px solid red;
+}
+.navigation{
+    width: 70%;
+    margin: 0 auto;
+    direction: rtl;
+    /* float: right !important; */
+    overflow: hidden;
+    margin-top: 8px;
+    /* margin-right: 10px; */
+    font-size: 0;
+    /* height: 40px; */
+    /* line-height: 40px; */
+    box-shadow: rgb(195, 195, 195) 5px 5px 5px 5px;
+}
+.navigation a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    padding: 10px;
+    transition-property: color,background-color;
+    transition-duration: .7s;
+    /* float: right; */
+}
+.navigation img{
+    vertical-align: -10px;
+    padding: 0 0 5px 0;
+}
+.hover:hover{
+    color: white;
+    background-color: rgb(162, 162, 162);
+    border-bottom: 2px solid red;
+}
+.navigation img:hover{
+    cursor: grab;
+}
+.navigation a.icone{
+  display: none;
+}
+@media screen and (max-width:600px) {
+
+    .navigation a:not(:last-child){
+        display:none;
+    }
+    /* .navigation a{
+        background-color: whitesmoke;
+        overflow: hidden;
+    } */
+
+    .navigation a.icone{
+        display: inline !important;
+        float: left !important;
+        padding-top: 1px;
+    }
+    .navigation.resnav{
+        position: relative;
+    }
+    .navigation.resnav a.icone{
+        position: absolute;
+        top: 0;
+        left: 0;
+
+    }
+
+    .navigation.resnav a{
+        float:none;
+        display: block;
+        text-align: center;
+    }
+}
+/* end nav */
+/* start header */
+.header{
+    margin-top: 30px;
+    padding: 0 !important;
+    overflow: hidden;
+    
+}
+figure{
+    padding: 0 !important;
+    margin: 0 !important;
+    position: relative;
+    direction: rtl;
+}
+.img-head{
+    height: 78vh;
+}
+.absolute{
+    position: absolute;
+}
+/* .overlay{
+    margin-top: 30px;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0,.5 );
+    z-index: 2;
+} */
+.header-title{
+    color: aliceblue;
+    background-color: rgba(0, 0, 0, .1);  
+    padding: 10px;
+    height: 220px;
+    margin: 50px;
+    max-width: 200px;
+    font-size: 18px;
+}
+.header-title h3{
+    padding: 10px 0 70px 0;
+}
+.header-title a{
+    color: antiquewhite;
+    text-decoration: none;
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+    float: left;
+    
+}
+@media screen and (max-width:600px) {
+    .header-title{
+        font-size: 14px;
+    }
+}
+/* end header */
+/* start course */
+.up-course h2{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    position: relative;
+    display: block;
+    box-shadow: rgb(44, 101, 151) 4px 4px 4px 4px;
+    height: 50px;
+    line-height: 50px;
+}
+/* .up-course h2::before{
+    content: '';
+    width: 40px;
+    height: 3px;
+    background-color: orange;
+    position: absolute;
+    top: 15px;
+    right: 424px;
+}
+.up-course h2::after{
+    content: '';
+    width: 40px;
+    height: 3px;
+    background-color: orange;
+    position: absolute;
+    top: 15px;
+    right: 600px;
+} */
+.down-course{
+    width: 80%;
+}
+.card-light{
+    /* box-shadow: gray 1px 1px 1px 1px; */
+    
+    margin-right: 50px;
+    
+}
+.card{
+    margin-top: 30px;
+}
+.card-tittle{
+    /* float: right; */
+    /* text-align: center; */
+    padding: 5px;
+}
+.card-tittle h2{
+    float: right;
+}
+.card-tittle a{
+    text-decoration: none;
+    color:cadetblue;
+    float: left;
+}
+.card-4{
+    margin-top: 122px;
+}
+.card-overlay{
+    background-color: rgba(0, 0, 0, .5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    transition: all .5s;
+}
+.card:hover .card-overlay{
+  opacity: 1;
+}
+.card-overlay p{
+    color: azure;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+/* end course */
+/* start about us */
+.about{
+    margin-bottom: 100px;
+}
+.float-r{
+    float: right;
+}
+.w50{
+    width: 50%;
+}
+.about-us{
+    background-color: rgb(140, 159, 186);
+    width: 45%;
+    margin-right: 5px;
+    margin-top: 88px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 0 25px 0 25px;
+}
+.about-us p{
+    line-height: 32px;
+}
+.about-us a{
+    background-color: rgb(8, 61, 142);
+    color: aliceblue;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 5px;
+    transition: all .5s;
+}
+.about-us a:hover{
+    background-color: rgb(213, 208, 163);
+    color: black;
+    border-radius: 0 10px 0 10px;
+}
+/* @media screen and (max-width:600px) {
+    .about-us{
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    
+} */
+@media screen and (max-width:900px) {
+    .about .hidde-about{
+        display: none;
+    }
+    .about-us{
+        width: 90%;
+        margin-top: 0;
+        float: inline-start;
+        margin-right: 17px;
+    }
+    
+}
+
+/* end about us */
+ /* start teacher section  */
+.teacher-sction{
+    direction: rtl;
+}
+.about-teacher{
+    text-align: center;
+    background-color:rgb(254, 192, 137);
+    padding: 10px;
+    border-radius: 25px 0 25px 0;
+    margin-bottom: 100px;
+}
+.about-teacher p{
+    font-size: 16px;
+    color: rgb(25, 77, 77);
+}
+.about-teacher a{
+    text-decoration: none;
+    font-size: 15px;
+    background-color: rgb(255, 163, 70);
+    color: black;
+    padding: 6px;
+    border-radius: 5px;
+    transition: all .5s;
+}
+.about-teacher a:hover{
+    background-color: rgb(255, 240, 125);
+} 
+@media screen and (max-width:800px) {
+    .about-teacher p{
+        font-size: 13px;
+    }
+    .about-teacher h2{
+        font-size: 16px;
+    }
+    .about-teacher a{
+        font-size: 14px;
+    }
+    
+}
+  /* end teacher section  */
+  /* start state */
+  .state{
+    background-color: rgb(190, 100, 190);
+    /* height: 150px; */
+    margin-top: 500px;
+    margin-bottom: 50px;
+    cursor: pointer;
+  }
+  .img-state{
+    width: 30px;
+    margin-top: 20px;
+  }
+  .center{
+    text-align: center;
+  }
+  .white{
+    color: aliceblue;
+    font-size: 18px;
+  }
+  .black{
+    font-size: 15px;
+  }
+  @media screen and (max-width:900px) {
+            .state{
+                margin-top: 450px;
+            }
+  }
+  /* end state */
+  /* start q */
+ .questions{
+    margin-bottom: 80px;
+ }
+ .q-box ul{
+    list-style-type: none;
+ }
+ .q-box-right{
+    float: right;
+    width: 48%;
+    direction: rtl;
+    background-color: rgb(221, 221, 221);
+    box-shadow: gray 3px 3px 3px 3px;
+    margin-bottom: 20px;
+ }
+ .q-box-left{
+    float: left;
+    width: 48%;
+ }
+ .q-box-right-tittle{
+    padding: 15px;
+ }
+ .q-box-right img{
+     width: 20px;
+     display: inline;
+ }
+ .q-box-right h4{
+    display: inline;
+    font-size: 20px;
+    vertical-align: 5px;
+    padding-right: 3px;
+ }
+ .q-box-right p{
+    padding-right: 25px ;
+    color: rgb(110, 110, 206);
+ }
+ .q-box-left{
+    direction: rtl;
+ }
+ .q-box-left input{
+   margin-right: 10px;
+ }
+ .q-box-left label{
+    font-size: 20px;
+    cursor: pointer;
+ }
+ .q-box-left .tab-label{
+    background-color: rgb(190, 100, 190);
+    padding: 8px 15px;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+ }
+ .q-box-left .tab-label:hover{
+  background-color: rgb(227, 158, 227);
+}
+.q-box-left .tab-label::after{
+    content: '\276f';
+    text-align: center;
+    /* transition: all .5s; */
+}
+.q-box-left .tab-content{
+    display: none;
+    background-color: rgb(192, 192, 192);
+    color: rgb(7, 46, 81);
+    box-shadow: gray 3px 3px 5px 2px;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 50px;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all .5s ease;
+}
+.q-box-left input:checked ~ .tab-content{
+    display: block;
+}
+  /* end q */
+ 
